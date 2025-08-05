@@ -1,16 +1,10 @@
 <x-guest-layout>
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
+        <span class="text-center font-bold text-2xl text-primary">Forgot Password</span>
 
         <!-- Password Reset Token -->
-        <input type="hidden" name="token" value="{{ $request->route('token') }}">
-
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email', $request->email)" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
+        <input type="hidden" name="token" value="">
 
         <!-- Password -->
         <div class="mt-4">
@@ -31,9 +25,11 @@
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Reset Password') }}
-            </x-primary-button>
+            @if (Route::has('login'))
+                <x-primary-button>
+                    <a href="{{ route('login') }}">{{ __('Reset Password') }}</a>
+                </x-primary-button>
+            @endif
         </div>
     </form>
 </x-guest-layout>

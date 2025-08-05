@@ -1,6 +1,8 @@
+<title>Forgot Password</title>
 <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+    <span class="font-bold text-2xl text-primary">Forgot Password</span>
+    <div class="mb-4 text-lg text-primary font-normal">
+        {{ __('Type your email that you registered.') }}
     </div>
 
     <!-- Session Status -->
@@ -12,14 +14,22 @@
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required
+                autofocus />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Email Password Reset Link') }}
-            </x-primary-button>
+            <a class="mr-auto text-sm text-primary hover:text-secondary duration-200"
+                href="{{ url('/') }}">
+                {{ __('Go to Login Page') }}
+            </a>
+
+            @if (Route::has('send.otp'))
+                <x-primary-button>
+                    <a href="{{ route('send.otp') }}">{{ __('Send OTP') }}</a>
+                </x-primary-button>
+            @endif
         </div>
     </form>
 </x-guest-layout>
