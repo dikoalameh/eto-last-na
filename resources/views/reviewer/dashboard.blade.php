@@ -19,7 +19,20 @@
                     </p>
                 </div>
             </div>
+            <div>
+                <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                    <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
+                        <h2 class="text-3xl font-medium text-center">5</h2>
+                        <p class="mt-2 text-center">FOR APPROVAL OF ACCOUNTS</p>
+                    </div>
+                    <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
+                        <h2 class="text-3xl font-medium text-center">2</h2>
+                        <p class="mt-2 text-center">RESEARCH PROTOCOL</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <!-- Notification Tab -->
         <main class="flex-1 p-2">
             <div class="w-full mx-auto px-4 py-4 flex items-center justify-between">
@@ -37,9 +50,9 @@
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center">
                                 <!-- Any icons -->
-                                <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                                <!-- <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2v2H9v-2zm0-8h2v6H9V6z" />
-                                </svg>
+                                </svg> -->
                             </div>
                             <div class="flex-1">
                                 <p class="text-sm text-gray-800">

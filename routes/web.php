@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+// data entry
 Route::get('/', function () {
     return view('auth.login');
 })->name('auth.logout');
@@ -98,6 +99,22 @@ Route::get('/student/dashboard', function () {
 Route::get('/student/track-reviews', function () {
     return view('student.track-reviews');
 })->name('student.track.reviews');
+
+Route::get('/student/submit-forms', function () {
+    return view('student.submit-forms');
+})->name('student.submit.forms');
+
+Route::get('/student/submit-tickets', function () {
+    return view('student.submit-tickets');
+})->name('student.submit-tickets');
+
+Route::get('/student/download-forms', function () {
+    return view('student.download-forms');
+})->name('student.download.forms');
+
+Route::get('/student/settings', function () {
+    return view('student.settings');
+})->name('student.settings');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

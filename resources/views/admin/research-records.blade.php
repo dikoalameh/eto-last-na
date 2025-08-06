@@ -11,17 +11,17 @@
             <!-- Table header -->
             <thead class="bg-primary text-white text-[18px]/7 max-lg:text-[16px]">
                 <tr class="header-table">
-                    <th class="w-[11.11%]">Research Title</th>
-                    <th class="w-[10.00%]">File ID</th>
-                    <th class="w-[11.11%]">P.I. Name</th>
-                    <th class="w-[11.11%]">Date of Submission</th>
-                    <th class="w-[11.11%]">Classification of Reviews</th>
-                    <th class="w-[11.11%]">Status of Review</th>
-                    <th class="w-[11.11%]">Reviewer</th>
-                    <th class="w-[11.11%]">Decision</th>
-                    <th class="w-[11.11%]">Research File Type</th>
-                    <th class="w-[11.11%]">Date Edited</th>
-                    <th class="">Remarks</th>
+                    <th class="w-[9.09%]">Research Title</th>
+                    <th class="w-[9.09%]">File ID</th>
+                    <th class="w-[9.09%]">P.I. Name</th>
+                    <th class="w-[9.09%]">Date of Submission</th>
+                    <th class="w-[9.09%]">Classification of Reviews</th>
+                    <th class="w-[9.09%]">Status of Review</th>
+                    <th class="w-[9.09%]">Reviewer</th>
+                    <th class="w-[9.09%]">Decision</th>
+                    <th class="w-[9.09%]">Research File Type</th>
+                    <th class="w-[9.09%]">Date Edited</th>
+                    <th class="w-[9.09%]">Remarks</th>
                 </tr>
             </thead>
             <!-- Table body -->
