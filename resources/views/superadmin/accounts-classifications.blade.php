@@ -1,4 +1,4 @@
-<title>Accounts Classification</title>
+@section('title', 'Classification of Accounts')
 <x-superadmin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
@@ -14,7 +14,7 @@
                     <th class="w-[25.00%]">P.I. Name</th>
                     <th class="w-[25.00%]">Research Title</th>
                     <th class="w-[25.00%]">Classification of Account</th>
-                    <th class="w-[25.00%">Date Classified</th>
+                    <th class="w-[25.00%]">Date Classified</th>
                 </tr>
             </thead>
             <!-- Table body -->

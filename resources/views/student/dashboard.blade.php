@@ -1,4 +1,4 @@
-<title>Dashboard</title>
+@section('title', 'Dashboard')
 <x-student-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
@@ -11,7 +11,7 @@
             <div class="rounded-md shadow-md overflow-hidden bg-white">
                 <!-- Header bar -->
                 <div class="bg-primary text-white font-semibold px-4 py-2">
-                    Announcements/Reminders
+                    Reminder
                 </div>
 
                 <!-- Body -->
@@ -90,21 +90,42 @@
     <!-- Modal -->
     <!-- Submitted Documents -->
     <div id="modal1" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[9999]">
-        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full text-center">
-            <h2 class="text-2xl font-bold mb-4">Modal Title</h2>
-            <p class="">This modal opens when the card is clicked.</p>
-            <button class="closeModal mt-6 bg-blue text-white px-4 py-2 rounded hover:bg-blue">
-                Close
+        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
+            <h2 class="text-2xl font-bold mb-4">Submitted Documents</h2>
+            <div id="scrollbar" class="overflow-y-auto h-64 px-2 border-2 border-gray">
+                <x-submitted-document label="Form 2(A) - STUDY PROTOCOL REVIEW CHECKLIST" />
+                <x-submitted-document label="Form 2(B) - APPLICATION FOR INITIAL REVIEW" />
+                <x-submitted-document label="Form 2(C) - INFORMED CONSENT FORM" />
+                <x-submitted-document label="Form 2(D) - INFORMED CONSENT FORM FOR P.I." />
+                <x-submitted-document label="Form 5(E) - DOCUMENT HISTORY" />
+                <x-submitted-document label="Form 2(I) - CERTIFICATE OF EXEMPTION FROM REVIEW" />
+                <x-submitted-document label="Form 2(E) - PROTOCOL EVALUATION CHECKLIST" />
+                <x-submitted-document label="Form 2(J) - INFORMED CONSENT EVALUATION CHECKLIST" />
+                <x-submitted-document label="Form 3(A) - RESUBMISSION" />
+                <x-submitted-document label="Form 3(B) - REVIEW OF SUBMITTED STUDY PROTOCOL" />
+                <x-submitted-document label="Form 3(D) - APPLICATION FOR REVIEW OF AMENDMENT" />
+                <x-submitted-document label="Form 3(E) - AMENDMENTS" />
+                <x-submitted-document label="Form 3(J) - APPROVAL LETTER" />
+                <x-submitted-document label="Form 3(O) - ETHICAL CLEARANCE FORM" />
+                <x-submitted-document label="Form 3(C) - PROGRESS REPORTS" />
+                <x-submitted-document label="Form 3(L) - FINAL REPORTS" />
+            </div>
+            <button type="button"
+                class="closeModal mt-6 px-4 py-2 rounded text-primary bg-secondary border border-primary text-primary hover:bg-primary hover:text-secondary hover:border-secondary duration-200">
+                CLOSE
             </button>
         </div>
     </div>
     <!-- Pending Documents -->
     <div id="modal2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[9999]">
-        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full text-center">
-            <h2 class="text-2xl font-bold mb-4">Modal 2 Title</h2>
-            <p class="">This modal 2 opens when the 2nd card is clicked.</p>
-            <button class="closeModal mt-6 bg-blue text-white px-4 py-2 rounded">
-                Close
+        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
+            <h2 class="text-2xl font-bold mb-4">Pending Requirements</h2>
+            <div id="scrollbar" class="overflow-y-auto h-64 px-2 border-2 border-gray">
+                <p>All requirements has been passed</p>
+            </div>
+            <button type="button"
+                class="closeModal mt-6 px-4 py-2 rounded text-primary bg-secondary border border-primary text-primary hover:bg-primary hover:text-secondary hover:border-secondary duration-200">
+                CLOSE
             </button>
         </div>
     </div>

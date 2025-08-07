@@ -1,4 +1,4 @@
-<title>Permission Control</title>
+@section('title', 'Permission Control')
 <x-superadmin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">

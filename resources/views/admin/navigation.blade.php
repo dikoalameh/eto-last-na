@@ -27,7 +27,7 @@
                 <li>
                     <a href="{{ url('/admin/reviewers-checklist') }}"
                         class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('admin/reviewers-checklist') ? 'text-secondary' : '' }}">
-                        <i class="bi bi-check-circle mt-1"></i>
+                        <i class="bi bi-check-circle"></i>
                         <span class="w-full flex justify-between items-center px-3">
                             Reviewer Checklist
                         </span>
@@ -35,11 +35,11 @@
                 </li>
                 <!-- Research Approval -->
                 <li>
-                    <a href="{{ url('admin/research-approval') }}"
-                        class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('admin/research-approval') ? 'text-secondary' : '' }}">
-                        <i class="bi bi-file-earmark-check-fill mt-1"></i>
+                    <a href="{{ url('admin/assign-reviewer') }}"
+                        class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('admin/assign-reviewer') ? 'text-secondary' : '' }}">
+                        <i class="bi bi-person-fill-add"></i>
                         <span class="w-full flex justify-between items-center px-3">
-                            Research Approval
+                            Assign Reviewer
                         </span>
                     </a>
                 </li>
@@ -49,7 +49,7 @@
         <li>
             <a href="{{ url('/admin/pending-accounts') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('admin/pending-accounts') ? 'text-secondary' : '' }}">
-                <i class="bi bi-person-fill mt-1"></i>
+                <i class="bi bi-person-fill"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Pending Accounts
                 </span>
@@ -59,7 +59,7 @@
         <li>
             <a href="{{ url('/admin/research-records') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('admin/research-records') ? 'text-secondary' : '' }}">
-                <i class="bi bi-database mt-1"></i>
+                <i class="bi bi-database"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Research Records
                 </span>
@@ -69,7 +69,7 @@
         <li>
             <a href="{{ url('/admin/approved-accounts') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('admin/approved-accounts') ? 'text-secondary' : '' }}">
-                <i class="bi bi-person-check-fill mt-1"></i>
+                <i class="bi bi-person-check-fill"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Approved Accounts
                 </span>
@@ -79,7 +79,7 @@
         <li>
             <a href="{{ url('/admin/pending-reviews') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('admin/pending-reviews') ? 'text-secondary' : '' }}">
-                <i class="bi bi-clock-fill mt-1"></i>
+                <i class="bi bi-clock-fill"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Pending Reviews
                 </span>
@@ -88,7 +88,7 @@
         <!-- Settings -->
         <li>
             <a href="{{ url('admin/settings') }}" class="px-3 py-4 flex duration-200 hover:text-secondary {{ request()->is('admin/settings') ? 'text-secondary' : '' }}">
-                <i class="bi bi-gear-wide-connected mt-1"></i>
+                <i class="bi bi-gear-wide-connected"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Settings
                 </span>

@@ -1,4 +1,4 @@
-<title>Approved Accounts</title>
+@section('title', 'Approved Accounts')
 <x-admin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">

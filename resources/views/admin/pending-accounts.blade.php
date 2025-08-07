@@ -1,4 +1,3 @@
-<title>Pending Accounts</title>
 <x-admin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">

@@ -1,4 +1,4 @@
-<title>Dashboard</title>
+@section('title', 'Dashboard')
 <x-admin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
@@ -11,7 +11,7 @@
             <div class="rounded-md shadow-md overflow-hidden bg-white">
                 <!-- Header bar -->
                 <div class="bg-primary text-white font-semibold px-4 py-2">
-                    Announcements/Reminders
+                    Reminder
                 </div>
 
                 <!-- Body -->

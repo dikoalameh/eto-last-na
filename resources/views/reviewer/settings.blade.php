@@ -1,4 +1,4 @@
-<title>Settings</title>
+@section('title', 'Settings')
 <x-review-layout>
     <main class="ml-[335px] max-lg:ml-0">
         <div class="py-12">

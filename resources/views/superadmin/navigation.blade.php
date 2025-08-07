@@ -12,21 +12,44 @@
                 <span class="w-full flex justify-between items-center px-3">Dashboard</span>
             </a>
         </li>
-        <!-- Research Approval -->
-        <li>
-            <a href="{{ url('/superadmin/research-approval') }}"
-                class="flex items-center justify-between px-3 py-4 transition-all duration-200 hover:text-secondary {{ request()->is('superadmin/research-approval') ? 'text-secondary' : '' }}">
-                <i class="bi bi-file-earmark-check-fill"></i>
-                <span class="w-full flex justify-between items-center px-3">
-                    Research Approval
-                </span>
-            </a>
+        <!-- Dropdown -->
+        <li class="px-3 py-4">
+            <button class="dropdownToggle w-full flex justify-between items-center hover:text-secondary transition-all">
+                <i class="bi bi-file-earmark-fill"></i>
+                <span class="mr-auto px-3">View Documents</span>
+                <svg class="dropdownArrow w-4 h-4 transition-transform" fill="none" stroke="currentColor"
+                    stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <ul class="dropdownMenu ml-1 mt-4 space-y-1 hidden">
+                <!-- Reviewer Checklist -->
+                <li>
+                    <a href="{{ url('/superadmin/reviewers-checklist') }}"
+                        class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('superadmin/reviewers-checklist') ? 'text-secondary' : '' }}">
+                        <i class="bi bi-check-circle"></i>
+                        <span class="w-full flex justify-between items-center px-3">
+                            Reviewer Checklist
+                        </span>
+                    </a>
+                </li>
+                <!-- Research Approval -->
+                <li>
+                    <a href="{{ url('superadmin/assign-reviewer') }}"
+                        class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('superadmin/assign-reviewer') ? 'text-secondary' : '' }}">
+                        <i class="bi bi-person-fill-add"></i>
+                        <span class="w-full flex justify-between items-center px-3">
+                            Assign Reviewer
+                        </span>
+                    </a>
+                </li>
+            </ul>
         </li>
         <!-- Classification of Accounts -->
         <li>
             <a href="{{ url('/superadmin/accounts-classifications') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('superadmin/accounts-classifications') ? 'text-secondary' : '' }}">
-                <i class="bi bi-person-fill mt-1"></i>
+                <i class="bi bi-person-fill"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Accounts Classification
                 </span>
@@ -36,7 +59,7 @@
         <li>
             <a href="{{ url('/superadmin/research-records') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('superadmin/research-records') ? 'text-secondary' : '' }}">
-                <i class="bi bi-database mt-1"></i>
+                <i class="bi bi-database"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Research Records
                 </span>
@@ -46,7 +69,7 @@
         <li>
             <a href="{{ url('/superadmin/pending-reviews') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('superadmin/pending-reviews') ? 'text-secondary' : '' }}">
-                <i class="bi bi-clock-fill mt-1"></i>
+                <i class="bi bi-clock-fill"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Pending Reviews
                 </span>
@@ -56,7 +79,7 @@
         <li>
             <a href="{{ url('/superadmin/permission-control') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('superadmin/permission-control') ? 'text-secondary' : '' }}">
-                <i class="bi bi-universal-access-circle mt-1"></i>
+                <i class="bi bi-universal-access-circle"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Permission Control
                 </span>
@@ -66,7 +89,7 @@
         <li>
             <a href="{{ url('superadmin/settings') }}"
                 class="px-3 py-4 flex duration-200 hover:text-secondary {{ request()->is('superadmin/settings') ? 'text-secondary' : '' }}">
-                <i class="bi bi-gear-wide-connected mt-1"></i>
+                <i class="bi bi-gear-wide-connected"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     Settings
                 </span>
@@ -78,7 +101,7 @@
                 <img src="" alt="" class="h-[45px] w-[45px] object-cover rounded-[50%] mr-[10px] border-2 border-white">
                 <div class="">
                     <div class="text-[16px] whitespace-nowrap">Iyong Pangalan</div>
-                    <div class="text-[14px] whitespace-nowrap">Admin</div>
+                    <div class="text-[14px] whitespace-nowrap">Superadmin</div>
                 </div>
             </div>
             <a href="{{ url('/') }}" class="duration-200 hover:text-secondary">

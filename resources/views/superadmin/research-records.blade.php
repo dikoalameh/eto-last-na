@@ -1,4 +1,4 @@
-<title>Research Records</title>
+@section('title', 'Research Records')
 <x-superadmin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">

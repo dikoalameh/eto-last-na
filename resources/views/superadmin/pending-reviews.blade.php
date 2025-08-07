@@ -1,4 +1,4 @@
-<title>Pending Reviews</title>
+@section('title', 'Pending Reviews')
 <x-superadmin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">

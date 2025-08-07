@@ -33,9 +33,9 @@ Route::get('/admin/pending-reviews', function () {
     return view('admin.pending-reviews');
 })->name('admin.pending.reviews');
 
-Route::get('/admin/research-approval', function () {
-    return view('admin.research-approval');
-})->name('admin.research.approval');
+Route::get('/admin/assign-reviewer', function () {
+    return view('admin.assign-reviewer');
+})->name('admin.assign.reviewer');
 
 Route::get('/admin/reviewers-checklist', function () {
     return view('admin.reviewers-checklist');
@@ -66,13 +66,17 @@ Route::get('/superadmin/permission-control', function () {
     return view('superadmin.permission-control');
 })->name('superadmin.permission.control');
 
-Route::get('/superadmin/research-approval', function () {
-    return view('superadmin.research-approval');
-})->name('superadmin.research.approval');
+Route::get('/superadmin/assign-reviewer', function () {
+    return view('superadmin.assign-reviewer');
+})->name('superadmin.assign.reviewer');
 
 Route::get('/superadmin/research-records', function () {
     return view('superadmin.research-records');
 })->name('superadmin.research.records');
+
+Route::get('/superadmin/reviewers-checklist', function () {
+    return view('superadmin.reviewers-checklist');
+})->name('superadmin.reviewers.checklist');
 
 Route::get('/superadmin/settings', function () {
     return view('superadmin.settings');
@@ -96,10 +100,6 @@ Route::get('/student/dashboard', function () {
     return view('student.dashboard');
 })->name('student.dashboard');
 
-Route::get('/student/track-reviews', function () {
-    return view('student.track-reviews');
-})->name('student.track.reviews');
-
 Route::get('/student/submit-forms', function () {
     return view('student.submit-forms');
 })->name('student.submit.forms');
@@ -115,6 +115,11 @@ Route::get('/student/download-forms', function () {
 Route::get('/student/settings', function () {
     return view('student.settings');
 })->name('student.settings');
+
+// gawan ko lang ng route to kase kayo na ata maglalagay ng SPA (single-page app) if trip nyo lang naman HAHAHAH
+Route::get('/student/requirements', function () {
+    return view('student.requirements');
+})->name('student.requirements');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
