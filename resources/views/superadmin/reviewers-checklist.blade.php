@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 @section('title', 'Reviewers Checklist')
 <x-superadmin-layout>
+=======
+<title>Reviewers Checklist</title>
+<x-admin-layout>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
         <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
@@ -69,4 +74,8 @@
             </tbody>
         </table>
     </main>
+<<<<<<< HEAD
 </x-superadmin-layout>
+=======
+</x-admin-layout>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb

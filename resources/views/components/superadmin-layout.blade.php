@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+<<<<<<< HEAD
     <title>@yield('title','Default title')</title>
+=======
+    <title>{{ config('app.name', 'Title') }}</title>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Icons -->
@@ -43,7 +47,11 @@
         $(document).ready(function () {
             var table = $('#myTable').DataTable({
                 scrollX: true,
+<<<<<<< HEAD
                 scrollY: '450px',
+=======
+                scrollY: '500px',
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                 autoWidth: false,
                 fixedHeader: true,
             });

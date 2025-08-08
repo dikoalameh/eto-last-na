@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 @section('title', 'Settings')
 <x-admin-layout>
     <main class="ml-[335px] max-lg:ml-0 max-md:m-3">
+=======
+<title>Settings</title>
+<x-admin-layout>
+    <main class="ml-[335px] max-lg:ml-0">
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
         <div class="py-12">
             <div class="max-w-full mx-auto sm:px-6 lg:px-8 space-y-6">
                 <!-- Update Profile Information -->

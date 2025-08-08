@@ -16,7 +16,11 @@
         <li>
             <a href="{{ url('reviewer/protocol-assign') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('reviewer/protocol-assign') ? 'text-secondary' : '' }}">
+<<<<<<< HEAD
                 <i class="bi bi-file-earmark-fill"></i>
+=======
+                <i class="bi bi-file-earmark-fill mt-1"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                 <span class="w-full flex justify-between items-center px-3">Assigned Research Protocol</span>
             </a>
         </li>
@@ -24,7 +28,11 @@
         <li>
             <a href="{{ url('reviewer/settings') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('reviewer/settings') ? 'text-secondary' : '' }}">
+<<<<<<< HEAD
                 <i class="bi bi-gear-wide-connected"></i>
+=======
+                <i class="bi bi-gear-wide-connected mt-1"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                 <span class="w-full flex justify-between items-center px-3">Settings</span>
             </a>
         </li>

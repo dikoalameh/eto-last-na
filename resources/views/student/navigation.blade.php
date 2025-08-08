@@ -12,6 +12,17 @@
                 <span class="w-full flex justify-between items-center px-3">Dashboard</span>
             </a>
         </li>
+<<<<<<< HEAD
+=======
+        <!-- Track Reviews -->
+        <li>
+            <a href="{{ url('student/track-reviews') }}"
+                class="flex items-center justify-between px-3 py-4 transition-all duration-200 hover:text-secondary {{ request()->is('student/track-reviews') ? 'text-secondary' : '' }}">
+                <i class="bi bi-search"></i>
+                <span class="w-full flex justify-between items-center px-3">Track Reviews</span>
+            </a>
+        </li>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
         <!-- Submit Forms -->
         <li>
             <a href="{{ url('student/submit-forms') }}"

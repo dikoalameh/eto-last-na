@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @section('title', 'Download Forms')
+=======
+<title>Download Forms</title>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 <x-student-layout>
     <main class="ml-[335px] max-lg:ml-auto p-4">
         <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
@@ -18,7 +22,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -32,7 +40,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -46,7 +58,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -60,7 +76,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -74,7 +94,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -88,7 +112,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -102,7 +130,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -116,7 +148,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -130,7 +166,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -144,7 +184,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -158,7 +202,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -172,7 +220,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -186,7 +238,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -200,7 +256,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -214,7 +274,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>
@@ -228,7 +292,11 @@
                         <div class="right">
                             <!-- lagay nyo lang download; e.g.(<a href="" download>) tas file as your href e.g. (<a href="images/image.jpeg">) para madownload ng user ung file -->
                             <a href="#">
+<<<<<<< HEAD
                                 <i class="bi bi-cloud-arrow-down-fill text-[30px]"></i>
+=======
+                                <i class="bi bi-cloud-arrow-up-fill text-[30px]"></i>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                             </a>
                         </div>
                     </div>

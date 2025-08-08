@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @section('title', 'Settings')
+=======
+<title>Settings</title>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 <x-student-layout>
     <main class="ml-[335px] max-lg:ml-0">
         <div class="py-12">

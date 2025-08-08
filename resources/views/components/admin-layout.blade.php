@@ -5,11 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+<<<<<<< HEAD
     <title>@yield('title', 'Default title')</title>
+=======
+    <title>{{ config('app.name', 'Title') }}</title>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
     <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <!-- DataTables & jQuery -->
@@ -40,7 +50,11 @@
         $(document).ready(function () {
             var table = $('#myTable').DataTable({
                 scrollX: true,
+<<<<<<< HEAD
                 scrollY: '450px',
+=======
+                scrollY: '500px',
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
                 autoWidth: false,
                 fixedHeader: true,
             });
@@ -105,6 +119,7 @@
                 });
             });
         }
+<<<<<<< HEAD
         // Set Page Title Based on URL Path
         const titles = {
             "/admin/dashboard": "DASHBOARD",
@@ -123,6 +138,8 @@
         // Update the text content of the header and the <title> tag
         document.getElementById("page-title").textContent = pageTitle;
         document.title = pageTitle;
+=======
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
     </script>
 </body>
 

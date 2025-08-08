@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @section('title', 'Pending Reviews')
+=======
+<title>Pending Reviews</title>
+>>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 <x-superadmin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
