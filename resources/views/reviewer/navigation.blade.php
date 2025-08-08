@@ -15,34 +15,16 @@
         <!-- Assigned Research Protocol -->
         <li>
             <a href="{{ url('reviewer/protocol-assign') }}"
-<<<<<<< HEAD
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('reviewer/protocol-assign') ? 'text-secondary' : '' }}">
-<<<<<<< HEAD
                 <i class="bi bi-file-earmark-fill"></i>
-=======
-                <i class="bi bi-file-earmark-fill mt-1"></i>
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
-                class="flex items-center px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('reviewer/protocol-assign') ? 'text-secondary' : '' }}">
-                <i class="bi bi-file-earmark-fill"></i>
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 <span class="w-full flex justify-between items-center px-3">Assigned Research Protocol</span>
             </a>
         </li>
         <!-- Settings -->
         <li>
             <a href="{{ url('reviewer/settings') }}"
-<<<<<<< HEAD
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('reviewer/settings') ? 'text-secondary' : '' }}">
-<<<<<<< HEAD
                 <i class="bi bi-gear-wide-connected"></i>
-=======
-                <i class="bi bi-gear-wide-connected mt-1"></i>
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
-                class="flex items-center px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('reviewer/settings') ? 'text-secondary' : '' }}">
-                <i class="bi bi-gear-wide-connected"></i>
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 <span class="w-full flex justify-between items-center px-3">Settings</span>
             </a>
         </li>

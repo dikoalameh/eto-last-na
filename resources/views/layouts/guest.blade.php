@@ -16,11 +16,7 @@
     </head>
     <body class="text-gray-900 antialiased">
         <!-- body layout -->
-<<<<<<< HEAD
         <div class="min-h-screen flex sm:flex flex-col justify-center items-center sm:justify-center sm:items-center pt-6 sm:pt-0">
-=======
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             <div>
                 <a href="/">
                     <x-application-logo class="w-20 h-20 text-gray-500" />

@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 @section('title', 'Dashboard')
-=======
-<title>Dashboard</title>
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
-@section('title', 'Dashboard')
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
 <x-student-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
@@ -19,11 +11,7 @@
             <div class="rounded-md shadow-md overflow-hidden bg-white">
                 <!-- Header bar -->
                 <div class="bg-primary text-white font-semibold px-4 py-2">
-<<<<<<< HEAD
-                    Announcements/Reminders
-=======
                     Reminder
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 </div>
 
                 <!-- Body -->
@@ -102,10 +90,6 @@
     <!-- Modal -->
     <!-- Submitted Documents -->
     <div id="modal1" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[9999]">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
         <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
             <h2 class="text-2xl font-bold mb-4">Submitted Documents</h2>
             <div id="scrollbar" class="overflow-y-auto h-64 px-2 border-2 border-gray">
@@ -129,25 +113,11 @@
             <button type="button"
                 class="closeModal mt-6 px-4 py-2 rounded text-primary bg-secondary border border-primary text-primary hover:bg-primary hover:text-secondary hover:border-secondary duration-200">
                 CLOSE
-<<<<<<< HEAD
-=======
-        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full text-center">
-            <h2 class="text-2xl font-bold mb-4">Modal Title</h2>
-            <p class="">This modal opens when the card is clicked.</p>
-            <button class="closeModal mt-6 bg-blue text-white px-4 py-2 rounded hover:bg-blue">
-                Close
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             </button>
         </div>
     </div>
     <!-- Pending Documents -->
     <div id="modal2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[9999]">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
         <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
             <h2 class="text-2xl font-bold mb-4">Pending Requirements</h2>
             <div id="scrollbar" class="overflow-y-auto h-64 px-2 border-2 border-gray">
@@ -156,16 +126,6 @@
             <button type="button"
                 class="closeModal mt-6 px-4 py-2 rounded text-primary bg-secondary border border-primary text-primary hover:bg-primary hover:text-secondary hover:border-secondary duration-200">
                 CLOSE
-<<<<<<< HEAD
-=======
-        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full text-center">
-            <h2 class="text-2xl font-bold mb-4">Modal 2 Title</h2>
-            <p class="">This modal 2 opens when the 2nd card is clicked.</p>
-            <button class="closeModal mt-6 bg-blue text-white px-4 py-2 rounded">
-                Close
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             </button>
         </div>
     </div>

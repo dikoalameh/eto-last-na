@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 @section('title', 'Pending Reviews')
-=======
-<title>Pending Reviews</title>
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
-@section('title', 'Pending Reviews')
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
 <x-admin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">

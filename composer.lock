@@ -4,15 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     "content-hash": "ba32ab0ed2647eade87243556ee129bb",
-=======
-    "content-hash": "0115dbddccf0cd5bb3f8d9794226947f",
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
-    "content-hash": "0115dbddccf0cd5bb3f8d9794226947f",
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
     "packages": [
         {
             "name": "brick/math",
@@ -219,8 +211,6 @@
             "time": "2024-07-08T12:26:09+00:00"
         },
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
             "name": "doctrine/dbal",
             "version": "4.3.2",
             "source": {
@@ -375,10 +365,6 @@
             "time": "2025-04-07T20:06:18+00:00"
         },
         {
-=======
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             "name": "doctrine/inflector",
             "version": "2.0.10",
             "source": {
@@ -2751,8 +2737,6 @@
             "time": "2024-07-20T21:41:07+00:00"
         },
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
             "name": "psr/cache",
             "version": "3.0.0",
             "source": {
@@ -2802,10 +2786,6 @@
             "time": "2021-02-03T23:26:27+00:00"
         },
         {
-=======
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             "name": "psr/clock",
             "version": "1.0.0",
             "source": {
@@ -6139,11 +6119,6 @@
             "time": "2025-03-05T08:29:11+00:00"
         },
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             "name": "doctrine/deprecations",
             "version": "1.1.5",
             "source": {
@@ -6192,10 +6167,6 @@
             "time": "2025-04-07T20:06:18+00:00"
         },
         {
-<<<<<<< HEAD
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
-=======
->>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             "name": "fakerphp/faker",
             "version": "v1.24.1",
             "source": {
