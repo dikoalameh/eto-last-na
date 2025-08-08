@@ -2,10 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
 use App\Http\Controllers\AdminController;
-=======
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 
 // data entry
 Route::get('/', function () {
@@ -37,15 +34,9 @@ Route::get('/admin/pending-reviews', function () {
     return view('admin.pending-reviews');
 })->name('admin.pending.reviews');
 
-<<<<<<< HEAD
 Route::get('/admin/assign-reviewer', function () {
     return view('admin.assign-reviewer');
 })->name('admin.assign.reviewer');
-=======
-Route::get('/admin/research-approval', function () {
-    return view('admin.research-approval');
-})->name('admin.research.approval');
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 
 Route::get('/admin/reviewers-checklist', function () {
     return view('admin.reviewers-checklist');
@@ -76,27 +67,18 @@ Route::get('/superadmin/permission-control', function () {
     return view('superadmin.permission-control');
 })->name('superadmin.permission.control');
 
-<<<<<<< HEAD
 Route::get('/superadmin/assign-reviewer', function () {
     return view('superadmin.assign-reviewer');
 })->name('superadmin.assign.reviewer');
-=======
-Route::get('/superadmin/research-approval', function () {
-    return view('superadmin.research-approval');
-})->name('superadmin.research.approval');
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 
 Route::get('/superadmin/research-records', function () {
     return view('superadmin.research-records');
 })->name('superadmin.research.records');
 
-<<<<<<< HEAD
 Route::get('/superadmin/reviewers-checklist', function () {
     return view('superadmin.reviewers-checklist');
 })->name('superadmin.reviewers.checklist');
 
-=======
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 Route::get('/superadmin/settings', function () {
     return view('superadmin.settings');
 })->name('superadmin.settings');
@@ -119,13 +101,6 @@ Route::get('/student/dashboard', function () {
     return view('student.dashboard');
 })->name('student.dashboard');
 
-<<<<<<< HEAD
-=======
-Route::get('/student/track-reviews', function () {
-    return view('student.track-reviews');
-})->name('student.track.reviews');
-
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 Route::get('/student/submit-forms', function () {
     return view('student.submit-forms');
 })->name('student.submit.forms');
@@ -142,25 +117,19 @@ Route::get('/student/settings', function () {
     return view('student.settings');
 })->name('student.settings');
 
-<<<<<<< HEAD
 Route::get('/superadmin/permission-control', [AdminController::class, 'index'])->name('permission-control');
 
 Route::post('/superadmin/store', [AdminController::class, 'store'])->name('superadmin.store');
 
-=======
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-<<<<<<< HEAD
 // wag galawin, dto ako nageexperiment
 Route::get('/admin/sample-table', function () {
     return view('admin.sample-table');
 })->name('admin.sample.table');
 
-=======
->>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
 require __DIR__.'/auth.php';
