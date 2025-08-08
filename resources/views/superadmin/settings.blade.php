@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('title', 'Settings')
 =======
 <title>Settings</title>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+@section('title', 'Settings')
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
 <x-superadmin-layout>
     <main class="ml-[335px] max-lg:ml-0">
         <div class="py-12">

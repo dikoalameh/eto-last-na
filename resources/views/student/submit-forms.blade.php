@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('title', 'Submit Forms')
 =======
 <title>Submit Forms</title>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+@section('title', 'Submit Forms')
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
 <x-student-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
@@ -11,6 +15,9 @@
         </h2>
         <br>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
         <div class="p-6 space-y-10">
             <div class="my-4">
                 <h2 class="mb-4 font-semibold text-[20px]">Deficiencies</h2>
@@ -56,6 +63,7 @@
                             <label for="upload" class="cursor-pointer">
                                 <i class="text-3xl bi bi-cloud-arrow-up-fill"></i>
                             </label>
+<<<<<<< HEAD
 =======
 
         <div class="flex justify-center items-center p-6 w-full min-h-[30vh]">
@@ -80,12 +88,15 @@
                         <div class="right">
                             <span class="cursor-pointer text-primary text-[25px]">&#215;</span>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+<<<<<<< HEAD
 <<<<<<< HEAD
 </x-student-layout>
 =======
@@ -143,3 +154,6 @@
     });
 </script>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+</x-student-layout>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42

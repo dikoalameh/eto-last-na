@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('title', 'Research Protocol Assign')
 =======
 <title>Research Protocol Assign</title>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+@section('title', 'Research Protocol Assign')
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
 <x-review-layout>
     <main class="ml-[335px] max-lg:ml-auto p-4">
         <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">

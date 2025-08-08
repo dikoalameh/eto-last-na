@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('title', 'Dashboard')
 =======
 <title>Dashboard</title>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+@section('title', 'Dashboard')
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
 <x-admin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
@@ -15,7 +19,11 @@
             <div class="rounded-md shadow-md overflow-hidden bg-white">
                 <!-- Header bar -->
                 <div class="bg-primary text-white font-semibold px-4 py-2">
+<<<<<<< HEAD
                     Announcements/Reminders
+=======
+                    Reminder
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 </div>
 
                 <!-- Body -->
@@ -32,10 +40,14 @@
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h2 class="text-2xl font-semibold">12</h2>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <p class="">TOTAL USERS</p>
 =======
                         <p>TOTAL USERS</p>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                        <p>TOTAL USERS</p>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h2 class="text-2xl font-semibold">12</h2>
@@ -81,6 +93,7 @@
         </div>
         <div class="p-6 space-y-10">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <div class="flex max-md:block gap-10 w-full">
                 <!-- Main content -->
                 <main class="flex-1">
@@ -90,6 +103,8 @@
                     </div>
                     <div class="max-w-5xl mx-auto px-4 py-6 max-md:py-2">
 =======
+=======
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             <div class="flex gap-10 w-full">
                 <!-- Main content -->
                 <main class="flex-1">
@@ -98,7 +113,10 @@
                         <button class="text-sm text-blue hover:text-darkblue duration-200">Mark all as read</button>
                     </div>
                     <div class="max-w-5xl mx-auto px-4 py-6">
+<<<<<<< HEAD
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                         <div class="bg-white shadow-sm border-2 border-gray">
 
                             <!-- Scroll area (32 rem tall ≈ ~512 px) -->

@@ -13,6 +13,7 @@
             </a>
         </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <!-- Track Reviews -->
         <li>
@@ -23,6 +24,8 @@
             </a>
         </li>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
         <!-- Submit Forms -->
         <li>
             <a href="{{ url('student/submit-forms') }}"

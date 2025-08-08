@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>@yield('title', 'Default title')</title>
 =======
     <title>{{ config('app.name', 'Title') }}</title>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+    <title>@yield('title', 'Default Title')</title>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
     <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <!-- DataTables & jQuery -->
@@ -51,10 +61,14 @@
             var table = $('#myTable').DataTable({
                 scrollX: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 scrollY: '450px',
 =======
                 scrollY: '500px',
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                scrollY: '500px',
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 autoWidth: false,
                 fixedHeader: true,
             });
@@ -120,6 +134,7 @@
             });
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Set Page Title Based on URL Path
         const titles = {
             "/admin/dashboard": "DASHBOARD",
@@ -140,6 +155,8 @@
         document.title = pageTitle;
 =======
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
     </script>
 </body>
 

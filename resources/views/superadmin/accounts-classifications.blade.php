@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('title', 'Classification of Accounts')
 =======
 <title>Accounts Classification</title>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+@section('title', 'Classification of Accounts')
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
 <x-superadmin-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-lg:ml-auto p-4">
@@ -18,7 +22,11 @@
                     <th class="w-[25.00%]">P.I. Name</th>
                     <th class="w-[25.00%]">Research Title</th>
                     <th class="w-[25.00%]">Classification of Account</th>
+<<<<<<< HEAD
                     <th class="w-[25.00%">Date Classified</th>
+=======
+                    <th class="w-[25.00%]">Date Classified</th>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 </tr>
             </thead>
             <!-- Table body -->

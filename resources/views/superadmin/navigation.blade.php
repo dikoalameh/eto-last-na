@@ -27,12 +27,17 @@
                 <li>
                     <a href="{{ url('/superadmin/reviewers-checklist') }}"
 <<<<<<< HEAD
+<<<<<<< HEAD
                         class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('superadmin/reviewers-checklist') ? 'text-secondary' : '' }}">
                         <i class="bi bi-check-circle"></i>
 =======
                         class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('admin/reviewers-checklist') ? 'text-secondary' : '' }}">
                         <i class="bi bi-check-circle mt-1"></i>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                        class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('superadmin/reviewers-checklist') ? 'text-secondary' : '' }}">
+                        <i class="bi bi-check-circle"></i>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                         <span class="w-full flex justify-between items-center px-3">
                             Reviewer Checklist
                         </span>
@@ -40,6 +45,7 @@
                 </li>
                 <!-- Research Approval -->
                 <li>
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <a href="{{ url('superadmin/assign-reviewer') }}"
                         class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('superadmin/research-approval') ? 'text-secondary' : '' }}">
@@ -53,6 +59,13 @@
                         <span class="w-full flex justify-between items-center px-3">
                             Research Approval
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                    <a href="{{ url('superadmin/assign-reviewer') }}"
+                        class="block hover:text-secondary duration-200 px-2 py-2 flex {{ request()->is('superadmin/assign-reviewer') ? 'text-secondary' : '' }}">
+                        <i class="bi bi-person-fill-add"></i>
+                        <span class="w-full flex justify-between items-center px-3">
+                            Assign Reviewer
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                         </span>
                     </a>
                 </li>
@@ -63,10 +76,14 @@
             <a href="{{ url('/superadmin/accounts-classifications') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('superadmin/accounts-classifications') ? 'text-secondary' : '' }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <i class="bi bi-person-fill"></i>
 =======
                 <i class="bi bi-person-fill mt-1"></i>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                <i class="bi bi-person-fill"></i>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 <span class="w-full flex justify-between items-center px-3">
                     Accounts Classification
                 </span>
@@ -77,10 +94,14 @@
             <a href="{{ url('/superadmin/research-records') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('superadmin/research-records') ? 'text-secondary' : '' }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <i class="bi bi-database"></i>
 =======
                 <i class="bi bi-database mt-1"></i>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                <i class="bi bi-database"></i>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 <span class="w-full flex justify-between items-center px-3">
                     Research Records
                 </span>
@@ -91,10 +112,14 @@
             <a href="{{ url('/superadmin/pending-reviews') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('superadmin/pending-reviews') ? 'text-secondary' : '' }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <i class="bi bi-clock-fill"></i>
 =======
                 <i class="bi bi-clock-fill mt-1"></i>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                <i class="bi bi-clock-fill"></i>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 <span class="w-full flex justify-between items-center px-3">
                     Pending Reviews
                 </span>
@@ -105,10 +130,14 @@
             <a href="{{ url('/superadmin/permission-control') }}"
                 class="px-3 py-4 transition-all flex duration-200 hover:text-secondary {{ request()->is('superadmin/permission-control') ? 'text-secondary' : '' }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <i class="bi bi-universal-access-circle"></i>
 =======
                 <i class="bi bi-universal-access-circle mt-1"></i>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                <i class="bi bi-universal-access-circle"></i>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 <span class="w-full flex justify-between items-center px-3">
                     Permission Control
                 </span>
@@ -119,10 +148,14 @@
             <a href="{{ url('superadmin/settings') }}"
                 class="px-3 py-4 flex duration-200 hover:text-secondary {{ request()->is('superadmin/settings') ? 'text-secondary' : '' }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <i class="bi bi-gear-wide-connected"></i>
 =======
                 <i class="bi bi-gear-wide-connected mt-1"></i>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                <i class="bi bi-gear-wide-connected"></i>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 <span class="w-full flex justify-between items-center px-3">
                     Settings
                 </span>
@@ -135,10 +168,14 @@
                 <div class="">
                     <div class="text-[16px] whitespace-nowrap">Iyong Pangalan</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <div class="text-[14px] whitespace-nowrap">Superadmin</div>
 =======
                     <div class="text-[14px] whitespace-nowrap">Admin</div>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+                    <div class="text-[14px] whitespace-nowrap">Superadmin</div>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                 </div>
             </div>
             <a href="{{ url('/') }}" class="duration-200 hover:text-secondary">

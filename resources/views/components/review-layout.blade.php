@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>@yield('title','Default title')</title>
 =======
     <title>{{ config('app.name', 'Title') }}</title>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+    <title>@yield('title', 'Default Title')</title>
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Icons -->

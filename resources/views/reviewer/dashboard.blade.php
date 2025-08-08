@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @section('title', 'Dashboard')
 =======
 <title>Dashboard</title>
 >>>>>>> b196547aeff59a12333617ee3208ee2cbe1ef1fb
+=======
+@section('title', 'Dashboard')
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
 <x-review-layout>
     <main class="ml-[335px] max-lg:ml-auto p-4">
         <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
@@ -10,6 +14,7 @@
         </h2>
         <br>
         <div class="p-6 space-y-10">
+<<<<<<< HEAD
             <div class="rounded-md shadow-md overflow-hidden bg-white">
                 <!-- Header bar -->
                 <div class="bg-primary text-white font-semibold px-4 py-2">
@@ -23,6 +28,8 @@
                     </p>
                 </div>
             </div>
+=======
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
             <div>
                 <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
@@ -71,7 +78,10 @@
                         <template id="notification-template">
                             <!-- Same markup as above -->
                         </template>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87dc98ec9a8c3dab32310e4a5e37f4fb4de45d42
                     </ul>
                 </div>
             </div>
