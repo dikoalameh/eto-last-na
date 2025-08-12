@@ -28,39 +28,11 @@
         </div>
 
         <div id="co-wrapper">
-            <x-input-label for="co_name" :value="__('Co-Investigator/s')" />
-            <div class="flex space-x-2">
-                <div class="w-1/3">
-                    <x-text-input id="co_lname" class="block mt-1 w-full text-[14px] max-sm:text-[13px] h-[35px]"
-                        type="text" name="co_lname" :value="old('co_lname')" required autofocus autocomplete="co_lname"
-                        placeholder="Last name" />
-                    <x-input-error :messages="$errors->get('co_lname')" class="mt-2" />
-                </div>
-                <div class="w-1/3">
-                    <x-text-input id="co_fname" class="block mt-1 w-full text-[14px] max-sm:text-[13px] h-[35px]"
-                        type="text" name="co_fname" :value="old('co_fname')" required autofocus autocomplete="co_fname"
-                        placeholder="First name" />
-                    <x-input-error :messages="$errors->get('co_fname')" class="mt-2" />
-                </div>
-                <div class="w-1/3">
-                    <x-text-input id="co_mname" class="block mt-1 w-full text-[14px] max-sm:text-[13px] h-[35px]"
-                        type="text" name="co_mname" maxlength="4" :value="old('co_mname')" required autofocus
-                        autocomplete="co_mname" placeholder="M.I." />
-                    <x-input-error :messages="$errors->get('co_mname')" class="mt-2" />
-                </div>
-            </div>
-        </div>
-
-        <!-- Add/Delete Button -->
-        <div class="add-delete mt-4 flex space-x-2">
-            <x-primary-button id="add" type="button"
-                class="text-sm max-sm:text-[13px] w-1/2 justify-center items-center">
-                Add
-            </x-primary-button>
-            <x-primary-button id="delete" type="button"
-                class="text-sm max-sm:text-[13px] w-1/2 justify-center items-center">
-                Delete
-            </x-primary-button>
+            <x-input-label for="userCoInvestigators" :value="__('Co-Investigator/s (type N/A if none)')" />
+            <x-text-input id="userCoInvestigators" class="block mt-1 w-full text-[14px] max-sm:text-[13px] h-[35px]"
+                type="text" name="userCoInvestigators" :value="old('userCoInvestigators')"
+                autocomplete="userCoInvestigators" placeholder="e.g. (John Doe, Carlos González)" />
+            <x-input-error :messages="$errors->get('userCoInvestigators')" class="mt-2" />
         </div>
 
         <!-- If MCU Student or not -->
@@ -138,44 +110,6 @@
     </form>
 </x-guest-layout>
 <script>
-    // add delete co-investigator textbox
-    document.addEventListener("DOMContentLoaded", function () {
-        const addBtn = document.getElementById('add');
-        const deleteBtn = document.getElementById('delete');
-        // Wrap the original group if not already wrapped preventing buttons to be deleted
-        let wrapper = document.getElementById('co-wrapper');
-        if (!wrapper) {
-            const firstGroup = document.querySelector('.flex.space-x-2');
-            wrapper = document.createElement('div');
-            wrapper.id = 'co-wrapper';
-            firstGroup.parentNode.insertBefore(wrapper, firstGroup);
-            wrapper.appendChild(firstGroup);
-        }
-        addBtn.addEventListener('click', () => {
-            const groups = wrapper.querySelectorAll('.flex.space-x-2');
-            const lastGroup = groups[groups.length - 1];
-            const clone = lastGroup.cloneNode(true);
-
-            // Clear input values
-            clone.querySelectorAll('input').forEach(input => input.value = '');
-
-            // Clear errors
-            clone.querySelectorAll('.mt-2').forEach(err => err.innerHTML = '');
-
-            // add margin-top
-            clone.classList.add('mt-2');
-
-            wrapper.appendChild(clone);
-        });
-        deleteBtn.addEventListener('click', () => {
-            const groups = wrapper.querySelectorAll('.flex.space-x-2');
-
-            if (groups.length > 1) {
-                groups[groups.length - 1].remove();
-            }
-        });
-    });
-
     // disable enable textbox
     document.addEventListener('DOMContentLoaded', function () {
         const checkbox = document.getElementById('toggleCheckBox');

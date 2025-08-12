@@ -1,8 +1,8 @@
 @section('title', 'Dashboard')
 <x-student-layout>
     <!-- Main Content -->
-    <main class="ml-[335px] max-lg:ml-auto p-4">
-        <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
+    <main class="ml-[335px] max-2xl:ml-auto p-4">
+        <h2 class="max-2xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
             DASHBOARD
         </h2>
         <br>
@@ -61,7 +61,7 @@
                     <div class="w-full mx-auto px-4 max-md:px-0 py-2">
                         <div class="bg-white shadow-sm border-2 border-gray">
 
-                            <!-- Scroll area (32 rem tall ≈ ~512 px) -->
+                            <!-- Scroll area -->
                             <ul class="h-[32rem] overflow-y-auto scrollbar divide-y divide-gray">
 
                                 <!-- Notification item -->

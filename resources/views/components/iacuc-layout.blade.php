@@ -12,10 +12,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <!-- DataTables & jQuery -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.5/css/responsive.dataTables.css">
+
+    <!-- DataTables and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/responsive.dataTables.js"></script>
 </head>
 
 <body>
@@ -37,23 +43,13 @@
         </main>
     </div>
     <script>
-        $(document).ready(function () {
-            var table = $('#myTable').DataTable({
-                scrollX: true,
-                scrollY: '450px',
-                autoWidth: false,
-                fixedHeader: true,
-            });
-
-            table.columns.adjust().draw();
-
-            $(window).on('resize', function () {
-                table.columns.adjust();
-            });
-
-            // Initialize dropdown
-            dropDownMenu();
+        new DataTable('#myTable', {
+            paging: false,
+            responsive: true,
+            scrollY: '300px'
         });
+
+        dropDownMenu();
 
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
@@ -107,14 +103,14 @@
         }
         // Set Page Title Based on URL Path
         const titles = {
-            "/iacuc/dashboard": "Dashboard",
-            "/iacuc/assign-reviewer": "Assign Reviewer",
-            "/iacuc/approved-accounts": "Approved Accounts",
-            "/iacuc/pending-accounts": "Pending Accounts",
-            "/iacuc/pending-reviews": "Pending Reviews",
-            "/iacuc/research-records": "Research Records",
-            "/iacuc/reviewers-checklist": "Reviewers Checklist",
-            "/iacuc/settings": "Settings"
+            "/iacuc/dashboard": "DASHBOARD",
+            "/iacuc/reviewers-checklist": "REVIEWERS CHECKLIST",
+            "/iacuc/assign-reviewer": "ASSIGN REVIEWER",
+            "/iacuc/pending-accounts": "PENDING ACCOUNTS",
+            "/iacuc/research-records": "RESEARCH RECORDS",
+            "/iacuc/approved-accounts": "APPROVED ACCOUNTS",
+            "/iacuc/pending-reviews": "PENDING REVIEWS",
+            "/iacuc/settings": "SETTINGS"
         };
 
         const path = window.location.pathname;

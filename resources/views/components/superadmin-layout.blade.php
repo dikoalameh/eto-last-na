@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title','Default title')</title>
+    <title>@yield('title', 'Default title')</title>
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Icons -->
@@ -15,10 +15,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <!-- DataTables & jQuery -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.5/css/responsive.dataTables.css">
+
+    <!-- DataTables and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/responsive.dataTables.js"></script>
 </head>
 
 <body>
@@ -40,23 +46,13 @@
         </main>
     </div>
     <script>
-        $(document).ready(function () {
-            var table = $('#myTable').DataTable({
-                scrollX: true,
-                scrollY: '450px',
-                autoWidth: false,
-                fixedHeader: true,
-            });
-
-            table.columns.adjust().draw();
-
-            $(window).on('resize', function () {
-                table.columns.adjust();
-            });
-
-            // Initialize dropdown
-            dropDownMenu();
+        new DataTable('#myTable', {
+            paging: false,
+            responsive: true,
+            scrollY: '300px'
         });
+
+        dropDownMenu();
 
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
@@ -107,6 +103,23 @@
                     arrow.classList.remove('rotate-180');
                 });
             });
+
+            const titles = {
+                "/superadmin/dashboard": "DASHBOARD",
+                "/superadmin/reviewers-checklist": "REVIEWERS CHECKLIST",
+                "/superadmin/assign-reviewer": "ASSIGN REVIEWER",
+                "/superadmin/accounts-classifications": "ACCOUNTS CLASSIFICATION",
+                "/superadmin/research-records": "RESEARCH RECORDS",
+                "/superadmin/pending-reviews": "PENDING REVIEWS",
+                "/superadmin/permission-control": "PERMISSION CONTROL",
+                "/superadmin/settings": "SETTINGS"
+            };
+
+            const path = window.location.pathname;
+            const pageTitle = titles[path] || "Page";
+
+            // Update the text content of the header and the <title> tag
+            document.getElementById("page-title").textContent = pageTitle;
         }
     </script>
 </body>

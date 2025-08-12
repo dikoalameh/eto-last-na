@@ -1,4 +1,4 @@
-<nav class="shadow-md bg-primary max-lg:hidden h-screen w-[335px] p-2 flex flex-col text-white fixed top-0 left-0">
+<nav class="shadow-md bg-primary max-2xl:hidden h-screen w-[335px] p-2 flex flex-col text-white fixed top-0 left-0">
     <div class="px-3 py-2 h-20 flex justify-between items-center">
         <img src="" alt="LOGO">
     </div>
@@ -46,12 +46,9 @@
 
 <!-- Mobile Sidebar -->
 <div id="sidebar"
-    class="fixed top-0 left-0 h-full w-80 bg-primary lg:hidden shadow transform -translate-x-full transition-transform duration-300 z-50">
-    <div class="p-4 border-b">
-        <h2 class="text-xl font-semibold">Menu</h2>
-    </div>
+    class="fixed top-0 left-0 h-full w-80 bg-primary 2xl:hidden transform -translate-x-full transition-transform duration-300 z-50">
     <nav class="flex flex-col p-2">
-        <ul class="text-white">
+        <ul class="text-white mt-[55px]">
             <li>
                 <!-- Dashboard -->
                 <a href="{{ url('/reviewer/dashboard') }}"
@@ -105,6 +102,6 @@
         </svg>
     </button>
     <!-- Page Title (centered) -->
-    <h1 id="page-title" class="text-lg font-semibold mx-auto">Loading...</h1>
+    <h1 id="page-title" class="text-[15px] font-normal mx-auto">Loading...</h1>
     <img src="" alt="a">
 </header>

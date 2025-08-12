@@ -1,31 +1,31 @@
 @section('title', 'Dashboard')
 <x-superadmin-layout>
     <!-- Main Content -->
-    <main class="ml-[335px] max-lg:ml-auto p-4">
-        <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
+    <main class="ml-[335px] max-2xl:ml-auto p-4">
+        <h2 class="max-2xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
             DASHBOARD
         </h2>
         <br>
-        <div class="p-6 space-y-10">
+        <div class="p-6 max-md:p-0 space-y-10">
             <!-- Users Account -->
             <div>
                 <h2 class="text-xl font-semibold mb-4 text-gray-700">USERS ACCOUNT</h2>
                 <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h2 class="text-2xl font-semibold">12</h2>
-                        <p>TOTAL USERS</p>
+                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <p class="max-md:text-[12px]">TOTAL USERS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h2 class="text-2xl font-semibold">12</h2>
-                        <p>PENDING APPROVAL</p>
+                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <p class="max-md:text-[12px]">PENDING</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-2xl font-semibold">7</h3>
-                        <p>APPROVED ACCOUNTS</p>
+                        <h3 class="text-[20px] font-semibold">7</h3>
+                        <p class="max-md:text-[12px]">APPROVED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-2xl font-semibold">3</h3>
-                        <p>DISABLED ACCOUNTS</p>
+                        <h3 class="text-[20px] font-semibold">3</h3>
+                        <p class="max-md:text-[12px]">DISABLED</p>
                     </div>
                 </div>
             </div>
@@ -35,40 +35,40 @@
                 <h2 class="text-xl font-semibold mb-4 text-gray-700">RESEARCH PROTOCOL</h2>
                 <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-2xl font-semibold">5</h3>
-                        <p>EVALUATED PROTOCOLS</p>
+                        <h3 class="text-[20px] font-semibold">5</h3>
+                        <p class="max-md:text-[12px]">EVALUATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-2xl font-semibold">10</h3>
-                        <p>PENDING REVIEWS</p>
+                        <h3 class="text-[20px] font-semibold">10</h3>
+                        <p class="max-md:text-[12px]">PENDING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-2xl font-semibold">12</h3>
-                        <p>ONGOING REVIEWS</p>
+                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <p class="max-md:text-[12px]">ONGOING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-2xl font-semibold">5</h3>
-                        <p>TERMINATED PROTOCOLS</p>
+                        <h3 class="text-[20px] font-semibold">5</h3>
+                        <p class="max-md:text-[12px]">TERMINATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-2xl font-semibold">10</h3>
-                        <p>APPROVED PROTOCOLS</p>
+                        <h3 class="text-[20px] font-semibold">10</h3>
+                        <p class="max-md:text-[12px]">APPROVED</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="p-6 space-y-10">
-            <div class="flex gap-10 w-full">
+        <div class="p-6 max-md:px-0 space-y-10">
+            <div class="flex max-md:block gap-10 w-full">
                 <!-- Notification Tab -->
                 <main class="flex-1">
-                    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-                        <h1 class="text-2xl font-semibold text-gray-800">Notifications</h1>
-                        <button class="text-sm text-blue hover:text-darkblue duration-200">Mark all as read</button>
+                    <div class="max-w-5xl mx-auto max-md:px-1 px-4 py-4 flex items-center justify-between">
+                        <h1 class="text-2xl max-md:text-[20px] font-semibold text-gray-800">Notifications</h1>
+                        <button class="text-sm max-md:text-xs text-blue hover:text-darkblue duration-200">Mark all as read</button>
                     </div>
-                    <div class="max-w-5xl mx-auto px-4 py-6">
+                    <div class="max-w-5xl mx-auto max-md:px-0 px-4 py-6 max-md:py-2">
                         <div class="bg-white shadow-sm border-2 border-gray">
 
-                            <!-- Scroll area (32 rem tall ≈ ~512 px) -->
+                            <!-- Scroll area -->
                             <ul class="h-[32rem] overflow-y-auto scrollbar divide-y divide-gray">
 
                                 <!-- Notification item -->

@@ -10,7 +10,7 @@
         <table id="myTable"
             class="min-w-full max-md:text-[15px] display overflow-scroll whitespace-no-wrap border-collapse w-full">
             <!-- Table header -->
-            <thead class="bg-primary text-white text-[18px]/7 max-2xl:text-[14px]/6">
+            <thead class="bg-primary text-white text-[18px]/7 max-2xl:text-[16px]">
                 <tr class="header-table">
                     <th class="w-1/6">Research Protocol</th>
                     <th class="w-1/6">Research Title</th>
@@ -21,7 +21,7 @@
                 </tr>
             </thead>
             <!-- Table body -->
-            <tbody class="text-[17px]/6 max-2xl:text-[14px]/6">
+            <tbody class="text-[17px]/6 max-2xl:text-[15px]/6">
                 <tr>
                     <td>2025-001</td>
                     <td>Analyzing the Influence of Cultural Factors on Consumer Behavior</td>

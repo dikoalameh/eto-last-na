@@ -7,26 +7,26 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Default title')</title>
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/sample.css', 'resources/js/app.js'])
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <!-- DataTables & jQuery -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/3.0.5/js/dataTables.responsive.js"></script>
-    <script src="https://cdn.datatables.net/responsive/3.0.5/js/responsive.dataTables.js"></script>
 
-    <!-- CSS -->
+    <!-- DataTables CSS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.5/css/responsive.dataTables.css">
+
+    <!-- DataTables and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/responsive.dataTables.js"></script>
 </head>
 
 <body>
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-        @include('admin.navigation')
+        @include('erb.navigation')
 
         <!-- Page Heading -->
         @isset($header)
@@ -43,58 +43,19 @@
         </main>
     </div>
     <script>
-        $(document).ready(function () {
-            function initDataTable() {
-                var scrollHeight = $(window).height() < 660 ? '300px' : '300px'; // adjust px as needed
-
-                var table = $('#myTable').DataTable({
-                    scrollX: true,
-                    scrollY: scrollHeight,
-                    autoWidth: false,
-                    fixedHeader: true,
-                    destroy: true // important to destroy previous instance if re-initializing
-                });
-
-                table.columns.adjust().draw();
-
-                $(window).on('resize', function () {
-                    // Optionally adjust columns on resize
-                    table.columns.adjust();
-                });
-
-                return table;
-            }
-
-            var table = initDataTable();
-
-            // Optionally, if you want to re-initialize on resize and change scrollY dynamically:
-            $(window).on('resize', function () {
-                var currentHeight = $(window).height();
-                var newScrollY = currentHeight > 660 ? '300px' : '450px';
-
-                if (table.settings()[0].oInit.scrollY !== newScrollY) {
-                    table.destroy();
-                    table = $('#myTable').DataTable({
-                        scrollX: true,
-                        scrollY: newScrollY,
-                        autoWidth: false,
-                        fixedHeader: true
-                    });
-                    table.columns.adjust().draw();
-                } else {
-                    table.columns.adjust();
-                }
-            });
-
-            // Initialize dropdown
-            dropDownMenu();
+        new DataTable('#example', {
+            paging: false,
+            responsive: true,
+            scrollY: '300px'
         });
+
+        dropDownMenu();
 
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('overlay');
             const isHidden = sidebar.classList.contains('-translate-x-full');
-            
+
             sidebar.classList.toggle('-translate-x-full');
             overlay.classList.toggle('hidden');
         }

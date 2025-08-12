@@ -11,7 +11,7 @@
             <!-- Table header -->
             <thead class="bg-[var(--primary)] text-white text-[18px]/7 max-lg:text-[16px]">
                 <tr class="header-table">
-                    <th class="w-[25.00%]">Researcher Name</th>
+                    <th class="w-[25.00%]">P.I. Name</th>
                     <th class="w-[25.00%]">Research Title</th>
                     <th class="w-[25.00%]">Registration Date</th>
                     <th class="w-[25.00%]">Status</th>
@@ -23,7 +23,7 @@
                     <td>John Doe</td>
                     <td>Brain Injury: Prevention and Treatment of Chronic Brain Injury</td>
                     <td>4/15/2025<br>21:37:23</td>
-                    <td><button type="submit" class="border-2 p-[5px] hover:bg-gray">Approve</button></td>
+                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">Approve</button></td>
                 </tr>
                 <tr>
                     <td>Alfreds Futterkiste</td>

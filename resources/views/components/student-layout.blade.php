@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title','Default title')</title>
+    <title>@yield('title', 'Default title')</title>
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Icons -->
@@ -40,10 +40,7 @@
         </main>
     </div>
     <script>
-        $(document).ready(function () {
-            // Initialize dropdown
-            dropDownMenu();
-        });
+        dropDownMenu();
 
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
@@ -94,6 +91,22 @@
                     arrow.classList.remove('rotate-180');
                 });
             });
+
+            // Set Page Title Based on URL Path
+            const titles = {
+                "/student/dashboard": "DASHBOARD",
+                "/student/submit-forms": "SUBMIT FORMS",
+                "/student/download-forms": "DOWNLOAD FORMS",
+                "/student/submit-tickets": "SUBMIT TICKETS",
+                "/student/submit-form-layout": "SUBMIT FORMS",
+                "/student/settings": "SETTINGS"
+            };
+
+            const path = window.location.pathname;
+            const pageTitle = titles[path] || "Page";
+
+            // Update the text content of the header and the <title> tag
+            document.getElementById("page-title").textContent = pageTitle;
         }
     </script>
 </body>

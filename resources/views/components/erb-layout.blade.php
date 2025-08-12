@@ -12,10 +12,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <!-- DataTables & jQuery -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.5/css/responsive.dataTables.css">
+
+    <!-- DataTables and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/responsive.dataTables.js"></script>
 </head>
 
 <body>
@@ -37,24 +43,13 @@
         </main>
     </div>
     <script>
-        $(document).ready(function () {
-            function initDataTable() {
-                var scrollHeight = $(window).height() < 660 ? '300px' : '300px';
-                var table = $('#myTable').DataTable({
-                    scrollX: true,
-                    scrollY: scrollHeight,
-                    autoWidth: false,
-                    fixedHeader: true,
-                    destroy: true // important to destroy previous instance if re-initializing
-                });
-                table.columns.adjust().draw();
-                return table;
-            }
-            var table = initDataTable();
-
-            // Initialize dropdown
-            dropDownMenu();
+        new DataTable('#myTable', {
+            paging: false,
+            responsive: true,
+            scrollY: '300px'
         });
+
+        dropDownMenu();
 
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
@@ -108,14 +103,14 @@
         }
         // Set Page Title Based on URL Path
         const titles = {
-            "/erb/dashboard": "Dashboard",
-            "/erb/assign-reviewer": "Assign Reviewer",
-            "/erb/approved-accounts": "Approved Accounts",
-            "/erb/pending-accounts": "Pending Accounts",
-            "/erb/pending-reviews": "Pending Reviews",
-            "/erb/research-records": "Research Records",
-            "/erb/reviewers-checklist": "Reviewers Checklist",
-            "/erb/settings": "Settings",
+            "/erb/dashboard": "DASHBOARD",
+            "/erb/assign-reviewer": "ASSIGN REVIEWER",
+            "/erb/approved-accounts": "APPROVED ACCOUNTS",
+            "/erb/pending-accounts": "PENDING ACCOUNTS",
+            "/erb/pending-reviews": "PENDING REVIEWS",
+            "/erb/research-records": "RESEARCH RECORDS",
+            "/erb/reviewers-checklist": "REVIEWERS CHECKLIST",
+            "/erb/settings": "SETTINGS",
             "/erb/sample-table": "SAMPLE TABLE"
         };
 

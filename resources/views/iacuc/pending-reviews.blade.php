@@ -1,8 +1,8 @@
 @section('title','Pending Reviews')
 <x-iacuc-layout>
     <!-- Main Content -->
-    <main class="ml-[335px] max-lg:ml-auto p-4">
-        <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
+    <main class="ml-[335px] max-2xl:ml-auto p-4">
+        <h2 class="max-2xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
             PENDING REVIEWS
         </h2>
         <br>
@@ -24,7 +24,7 @@
                 <tr>
                     <td>John Doe</td>
                     <td>Brain Injury: Prevention and Treatment of Chronic Brain Injury</td>
-                    <td><button type="submit" class="border-2 p-[5px] hover:bg-gray">Assign Reviewer</button></td>
+                    <td><button type="submit" class="border-2 p-[5px] hover:bg-gray">Assign</button></td>
                     <td>Not Reviewed</td>
                     <td>N/A</td>
                     <td>N/A</td>

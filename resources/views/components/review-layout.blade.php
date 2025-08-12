@@ -15,10 +15,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <!-- DataTables & jQuery -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.5/css/responsive.dataTables.css">
+
+    <!-- DataTables and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.5/js/responsive.dataTables.js"></script>
 </head>
 
 <body>
@@ -40,21 +46,12 @@
         </main>
     </div>
     <script>
-        $(document).ready(function () {
-            var table = $('#myTable').DataTable({
-                scrollX: true,
-                scrollY: '500px',
-                autoWidth: false,
-                fixedHeader: true,
-            });
-
-            table.columns.adjust().draw();
-
-            $(window).on('resize', function () {
-                table.columns.adjust();
-            });
+        new DataTable('#myTable', {
+            paging: false,
+            responsive: true,
+            scrollY: '300px'
         });
-
+        
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('overlay');
@@ -63,11 +60,12 @@
             sidebar.classList.toggle('-translate-x-full');
             overlay.classList.toggle('hidden');
         }
+
         // Set Page Title Based on URL Path
         const titles = {
-            "/reviewer/dashboard": "Dashboard",
-            "/reviewer/protocol-assign": "Protocol Assign",
-            "/reviewer/settings": "Settings"
+            "/reviewer/dashboard": "DASHBOARD",
+            "/reviewer/protocol-assign": "PROTOCOL ASSIGN",
+            "/reviewer/settings": "SETTINGS"
         };
 
         const path = window.location.pathname;
@@ -75,7 +73,6 @@
 
         // Update the text content of the header and the <title> tag
         document.getElementById("page-title").textContent = pageTitle;
-        document.title = pageTitle;
     </script>
 </body>
 

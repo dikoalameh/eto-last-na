@@ -1,8 +1,8 @@
 @section('title','Reviewers Checklist')
 <x-iacuc-layout>
     <!-- Main Content -->
-    <main class="ml-[335px] max-lg:ml-auto p-4">
-        <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
+    <main class="ml-[335px] max-2xl:ml-auto p-4">
+        <h2 class="max-2xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
             REVIEWERS CHECKLIST
         </h2>
         <br>
@@ -29,7 +29,7 @@
                         Alexander Feuer<br>
                         Rene Phillips
                     </td>
-                    <td><button type="submit" class="border-2 p-[5px] hover:bg-gray">View</button></td>
+                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
                     <td>4/15/2025<br>21:37:23</td>
                 </tr>
                 <tr>
@@ -40,7 +40,7 @@
                         Pascale Cartrain<br>
                         Miguel Angel Paolino
                     </td>
-                    <td><button type="submit" class="border-2 p-[5px] hover:bg-gray">View</button></td>
+                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
                     <td>4/15/2025<br>21:37:23</td>
                 </tr>
                 <tr>
@@ -51,7 +51,7 @@
                         Paolo Accorti<br>
                         Peter Franken
                     </td>
-                    <td><button type="submit" class="border-2 p-[5px] hover:bg-gray">View</button></td>
+                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
                     <td>4/15/2025<br>21:37:23</td>
                 </tr>
                 <tr>
@@ -63,7 +63,7 @@
                         Philip Cramer<br>
                         Patricia McKenna
                     </td>
-                    <td><button type="submit" class="border-2 p-[5px] hover:bg-gray">View</button></td>
+                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
                     <td>4/15/2025<br>21:37:23</td>
                 </tr>
             </tbody>

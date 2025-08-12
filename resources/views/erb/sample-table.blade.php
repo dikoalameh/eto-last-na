@@ -6,144 +6,37 @@
             REVIEWERS CHECKLIST
         </h2>
         <br>
-
-        <table id="myTable"
-            class="min-w-full max-md:text-[15px] display overflow-scroll whitespace-no-wrap border-collapse w-64">
+        <table id="example" class="max-w-full display overflow-scroll whitespace-no-wrap border-collapse w-full">
             <!-- Table header -->
-            <thead class="bg-primary text-white text-[18px]/7 max-2xl:text-[14px]/6">
+            <thead class="bg-primary text-white text-[18px]/7 max-lg:text-[15px]">
                 <tr class="header-table">
-                    <th class="w-1/6">Research Protocol</th>
-                    <th class="w-1/6">Research Title</th>
-                    <th class="w-1/6">P.I. Name</th>
-                    <th class="w-1/6">Co-I. Name(s)</th>
-                    <th class="w-1/6">View</th>
-                    <th class="w-1/6">Date Submitted</th>
+                    <th class="w-[9.09%]">Research Title</th>
+                    <th class="w-[9.09%]">P.I. Name</th>
+                    <th class="w-[9.09%]">File ID</th>
+                    <th class="w-[9.09%]">Date of Submission</th>
+                    <th class="w-[9.09%]">Classification of Reviews</th>
+                    <th class="w-[9.09%]">Status of Review</th>
+                    <th class="w-[9.09%]">Reviewer</th>
+                    <th class="w-[9.09%]">Decision</th>
+                    <th class="w-[9.09%]">Research File Type</th>
+                    <th class="w-[9.09%]">Date Edited</th>
+                    <th class="w-[9.09%]">Remarks</th>
                 </tr>
             </thead>
             <!-- Table body -->
-            <tbody class="text-[17px]/7 max-2xl:text-[14px]/6">
+            <tbody class="text-[16px]/6 max-lg:text-[14px]/6">
                 <tr>
-                    <td>2025-001</td>
-                    <td>Analyzing the Influence of Cultural Factors on Consumer Behavior</td>
-                    <td>Karin Josephs</td>
-                    <td>
-                        Alexander Feuer<label for="">,</label><br>
-                        Rene Phillips
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] max-sm:p-[4px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-002</td>
-                    <td>Investigating the Link Between Air Pollution and Respiratory Diseases</td>
-                    <td>Paula Parente</td>
-                    <td>
-                        Pascale Cartrain<label for="">,</label><br>
-                        Miguel Angel Paolino
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-003</td>
-                    <td>The Role of Artificial Intelligence in Enhancing Healthcare Delivery</td>
-                    <td>Yvonne Moncada</td>
-                    <td>
-                        Paolo Accorti<label for="">,</label><br>
-                        Peter Franken
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-004</td>
-                    <td>Evaluating the Effectiveness of Mindfulness-Based Stress Reduction in Chronic Pain
-                        Management</td>
-                    <td>Catherine Dewey</td>
-                    <td>
-                        Philip Cramer<label for="">,</label><br>
-                        Patricia McKenna
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-001</td>
-                    <td>Analyzing the Influence of Cultural Factors on Consumer Behavior</td>
-                    <td>Karin Josephs</td>
-                    <td>
-                        Alexander Feuer<label for="">,</label><br>
-                        Rene Phillips
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-002</td>
-                    <td>Investigating the Link Between Air Pollution and Respiratory Diseases</td>
-                    <td>Paula Parente</td>
-                    <td>
-                        Pascale Cartrain<label for="">,</label><br>
-                        Miguel Angel Paolino
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-003</td>
-                    <td>The Role of Artificial Intelligence in Enhancing Healthcare Delivery</td>
-                    <td>Yvonne Moncada</td>
-                    <td>
-                        Paolo Accorti<label for="">,</label><br>
-                        Peter Franken
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-004</td>
-                    <td>Evaluating the Effectiveness of Mindfulness-Based Stress Reduction in Chronic Pain
-                        Management</td>
-                    <td>Catherine Dewey</td>
-                    <td>
-                        Philip Cramer<label for="">,</label><br>
-                        Patricia McKenna
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-001</td>
-                    <td>Analyzing the Influence of Cultural Factors on Consumer Behavior</td>
-                    <td>Karin Josephs</td>
-                    <td>
-                        Alexander Feuer<label for="">,</label><br>
-                        Rene Phillips
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-002</td>
-                    <td>Investigating the Link Between Air Pollution and Respiratory Diseases</td>
-                    <td>Paula Parente</td>
-                    <td>
-                        Pascale Cartrain<label for="">,</label><br>
-                        Miguel Angel Paolino
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
-                </tr>
-                <tr>
-                    <td>2025-003</td>
-                    <td>The Role of Artificial Intelligence in Enhancing Healthcare Delivery</td>
-                    <td>Yvonne Moncada</td>
-                    <td>
-                        Paolo Accorti<label for="">,</label><br>
-                        Peter Franken
-                    </td>
-                    <td><button type="button" class="border-2 p-[5px] hover:bg-gray">View</button></td>
-                    <td>4/15/2025 21:37:23</td>
+                    <td>Brain Injury: Prevention and Treatment of Chronic Brain Injury</td>
+                    <td>John Doe</td>
+                    <td>001</td>
+                    <td>2025/05/06<br>16:43:20</td>
+                    <td>Expedited</td>
+                    <td>Ongoing</td>
+                    <td>Thomas Hardy</td>
+                    <td>Ongoing</td>
+                    <td>form2a.pdf</td>
+                    <td>N/A</td>
+                    <td>Rejected</td>
                 </tr>
             </tbody>
         </table>

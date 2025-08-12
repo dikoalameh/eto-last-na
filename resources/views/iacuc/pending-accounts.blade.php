@@ -1,8 +1,8 @@
 @section('title','Pending Accounts')
 <x-iacuc-layout>
     <!-- Main Content -->
-    <main class="ml-[335px] max-lg:ml-auto p-4">
-        <h2 class="max-lg:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
+    <main class="ml-[335px] max-2xl:ml-auto p-4">
+        <h2 class="max-2xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
             PENDING ACCOUNTS
         </h2>
         <br>
@@ -11,7 +11,7 @@
             <!-- Table header -->
             <thead class="bg-[var(--primary)] text-white text-[18px]/7 max-lg:text-[16px]">
                 <tr class="header-table">
-                    <th class="w-[25.00%]">Researcher Name</th>
+                    <th class="w-[25.00%]">P.I. Name</th>
                     <th class="w-[25.00%]">Research Title</th>
                     <th class="w-[25.00%]">Registration Date</th>
                     <th class="w-[25.00%]">Status</th>

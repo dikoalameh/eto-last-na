@@ -175,8 +175,8 @@ Route::get('student/submit-form-layout', function () {
 });
 
 // wag galawin, dto ako nageexperiment
-Route::get('/admin/sample-table', function () {
-    return view('admin.sample-table');
-})->name('admin.sample.table');
+Route::get('/erb/sample-table', function () {
+    return view('erb.sample-table');
+})->name('erb.sample.table');
 
 require __DIR__.'/auth.php';
