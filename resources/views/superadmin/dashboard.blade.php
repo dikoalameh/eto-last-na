@@ -9,22 +9,22 @@
         <div class="p-6 max-md:p-0 space-y-10">
             <!-- Users Account -->
             <div>
-                <h2 class="text-xl font-semibold mb-4 text-gray-700">USERS ACCOUNT</h2>
+                <h2 class="text-[20px] max-sm:text-[17px] font-semibold mb-4 text-gray-700">USERS ACCOUNT</h2>
                 <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
                         <p class="max-md:text-[12px]">TOTAL USERS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
                         <p class="max-md:text-[12px]">PENDING</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">7</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">7</h3>
                         <p class="max-md:text-[12px]">APPROVED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">3</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">3</h3>
                         <p class="max-md:text-[12px]">DISABLED</p>
                     </div>
                 </div>
@@ -32,26 +32,26 @@
 
             <!-- Research Protocol -->
             <div>
-                <h2 class="text-xl font-semibold mb-4 text-gray-700">RESEARCH PROTOCOL</h2>
+                <h2 class="text-[20px] max-sm:text-[17px] font-semibold mb-4">RESEARCH PROTOCOL</h2>
                 <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">5</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">5</h3>
                         <p class="max-md:text-[12px]">EVALUATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">10</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">10</h3>
                         <p class="max-md:text-[12px]">PENDING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
                         <p class="max-md:text-[12px]">ONGOING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">5</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">5</h3>
                         <p class="max-md:text-[12px]">TERMINATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">10</h3>
+                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">10</h3>
                         <p class="max-md:text-[12px]">APPROVED</p>
                     </div>
                 </div>

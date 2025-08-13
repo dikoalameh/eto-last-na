@@ -9,7 +9,7 @@
 
         <table id="myTable" class="min-w-full display overflow-scroll whitespace-no-wrap border-collapse w-full">
             <!-- Table header -->
-            <thead class="bg-[var(--primary)] text-white text-[18px]/7 max-lg:text-[16px]">
+            <thead class="bg-primary text-white text-[18px]/7 max-lg:text-[16px]">
                 <tr class="header-table">
                     <th class="w-[25.00%]">P.I. Name</th>
                     <th class="w-[25.00%]">Research Title</th>

@@ -23,11 +23,11 @@
             <div>
                 <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">5</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] font-semibold">5</h3>
                         <p class="max-md:text-[13px]">APPROVAL OF ACCOUNTS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">2</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] font-semibold">2</h3>
                         <p class="max-md:text-[13px]">RESEARCH PROTOCOL</p>
                     </div>
                 </div>
@@ -37,12 +37,12 @@
         <div class="p-6 max-md:px-0 space-y-10">
             <div class="flex max-md:block gap-10 w-full">
                 <!-- Notification Tab -->
-                <main class="flex-1 py-4 max-md:px-0">
+                <main class="flex-1 py-4 max-md:px-0 max-md:py-2">
                     <div class="w-full mx-auto px-4 max-md:px-1 py-4 flex items-center justify-between">
                         <h1 class="text-2xl max-md:text-[20px] font-semibold text-gray-800">Notifications</h1>
                         <button class="ttext-sm max-md:text-xs text-blue hover:text-darkblue duration-200">Mark all as read</button>
                     </div>
-                    <div class="w-full mx-auto px-4 max-md:px-0 py-2">
+                    <div class="w-full mx-auto px-4 max-md:px-0 py-2 max-md:py-0">
                         <div class="bg-white shadow-sm border-2 border-gray">
 
                             <!-- Scroll area -->

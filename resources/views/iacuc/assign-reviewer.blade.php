@@ -2,25 +2,27 @@
 <x-iacuc-layout>
     <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
         <!-- Modal layout -->
-        <div class="bg-white rounded-md mt-6 px-6 py-4 border-4 border-gray max-w-lg w-full">
+        <div class="bg-white rounded-md mt-6 max-sm:mx-3 px-6 py-4 border-4 border-gray max-w-lg w-full">
             <button id="closeModalBtn"
                 class="absolute top-2 right-2 text-gray hover:text-black text-xl">&times;</button>
-            <h2 class="mb-6 font-semibold text-2xl">Assign Reviewer</h2>
+            <h2 class="mb-6 font-semibold text-2xl max-sm:text-[18px]">Assign Reviewer</h2>
             <!-- Form -->
             <form method="POST" action="" id="modalForm">
                 <!-- User ID -->
                 <div class="mt-2">
                     <x-input-label for="userID" :value="__('User ID')" />
-                    <x-text-input id="userID" class="block mt-1 w-full" type="text" name="userID" required
-                        autocomplete="userID" placeholder="User ID" />
+                    <x-text-input id="userID" class="block mt-1 w-full text-[14px] max-sm:text-[13px] h-[35px]"
+                        type="text" name="userID" required autocomplete="userID" placeholder="User ID" />
                     <x-input-error :messages="$errors->get('userID')" class="mt-2" />
                 </div>
 
                 <!-- Research Title -->
                 <div class="mt-2">
                     <x-input-label for="userResearchTitle" :value="__('Research Title')" />
-                    <x-text-input id="userResearchTitle" class="block mt-1 w-full" type="text" name="userResearchTitle"
-                        required autocomplete="userResearchTitle" placeholder="Research Title" />
+                    <x-text-input id="userResearchTitle"
+                        class="block mt-1 w-full text-[14px] max-sm:text-[13px] h-[35px]" type="text"
+                        name="userResearchTitle" required autocomplete="userResearchTitle"
+                        placeholder="Research Title" />
                     <x-input-error :messages="$errors->get('userResearchTitle')" class="mt-2" />
                 </div>
 
@@ -31,28 +33,30 @@
                         <form action="">
                             <input type="file" name="uploadForms" id="upload" accept=".doc,.docx,.pdf" multiple hidden>
                             <label for="upload"
-                                class="max-w-full w-full min-h-[50px] border border-solid p-2 flex flex-col justify-center items-center cursor-pointer">
+                                class="max-w-full w-full min-h-[50px] border border-solid p-2 max-sm:p-1 flex flex-col justify-center items-center cursor-pointer">
                                 <span class="text-[20px]"><i class="bi bi-cloud-arrow-up-fill text-primary"></i></span>
-                                <p class="text-[16px] text-primary text-center">Click to Upload File</p>
+                                <p class="text-[16px] max-sm:text-[14px] text-primary text-center">Click to Upload File
+                                </p>
                             </label>
                         </form>
                     </div>
                     <div id="fileWrapper">
-                        <h3 class="my-[30px] text-[20px] font-bold">
+                        <h3 class="mt-[25px] text-[20px] max-sm:text-[15px] font-bold">
                             Uploaded Documents
-                            <label for="" class="text-[15px]">
+                            <label for="" class="text-[14px] font-medium max-sm:text-[11px]">
                                 (.docx, .doc, or .pdf)
                             </label>
                         </h3>
-
-                        <div id="scrollbar" class="overflow-y-auto h-64 px-2 border-2 border-gray" maxlength="10">
-                            <!-- dito ung mga dinownload na file -->
+                        <div id="scrollbar"
+                            class="overflow-y-auto h-40 px-2 max-sm:px-2 max-sm:mt-1 border-2 border-gray">
+                            <!-- dito ung mga inupload na file -->
                         </div>
                     </div>
-
-                    <div class="">
+                    <div>
                         <button type="submit"
-                            class="py-2 px-6 my-5 rounded text-primary bg-secondary hover:bg-primary hover:text-secondary duration-200 font-medium">SUBMIT</button>
+                            class="py-2 px-6 my-5 max-sm:my-2 max-sm:py-2 max-sm:px-5 max-sm:text-[15px] tracking-widest rounded text-primary bg-secondary hover:bg-primary hover:text-secondary duration-200">
+                            SUBMIT
+                        </button>
                     </div>
                 </div>
             </form>
@@ -110,11 +114,11 @@
         const fileshow = (filename, filetype) => {
             // file box
             const showfileboxElem = document.createElement("div");
-            showfileboxElem.classList.add("flex", "justify-between", "items-center", "my-[10px]", "px-3", "py-1", "shadow-md", "bg-gray", "border", "border-darkgray");
+            showfileboxElem.classList.add("flex", "justify-between", "items-center", "my-[10px]", "max-sm:my-[5px]", "px-3", "py-1", "max-sm:py-0", "shadow-md", "bg-gray", "border", "border-darkgray");
 
             // left side
             const leftElem = document.createElement("div");
-            leftElem.classList.add("flex", "items-center", "flex-wrap", "gap-[10px]")
+            leftElem.classList.add("flex", "items-center", "flex-wrap", "gap-[10px]", "max-sm:text-[13px]")
 
             // file title
             const filetitleElem = document.createElement("h3");
@@ -125,7 +129,7 @@
             const rightElem = document.createElement("div");
             rightElem.classList.add("right");
             const crossElem = document.createElement("span");
-            crossElem.classList.add("cursor-pointer", "text-primary", "text-[25px]");
+            crossElem.classList.add("cursor-pointer", "text-primary", "text-[25px]", "max-sm:text-[20px]");
             crossElem.innerHTML = "&#215;";
 
             // adds the content to right side of the file box

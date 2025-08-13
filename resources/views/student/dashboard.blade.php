@@ -24,26 +24,26 @@
 
             <!-- Cards -->
             <div>
-                <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="grid 2xl:grid-cols-4 max-md:grid-cols-2 md:grid-cols-2 max-lg:grid-cols-2 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h2 class="text-2xl max-sm:text-[14px] font-semibold max-sm:font-semibold text-center">UNDER
+                        <h2 class="text-[25px] max-2xl:text-[22px] max-sm:text-[14px] font-semibold max-sm:font-semibold text-center">UNDER
                             REVIEW</h2>
                         <p class="mt-2 text-center max-sm:text-[13px]">STATUS OF REVIEW</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h2 class="text-2xl max-sm:text-[14px] font-semibold max-sm:font-semibold text-center">
+                        <h2 class="text-[25px] max-2xl:text-[22px] max-sm:text-[14px] font-semibold max-sm:font-semibold text-center">
                             2025/08/05</h2>
                         <p class="mt-2 text-center max-sm:text-[13px]">DEADLINE OF SUBMISSION</p>
                     </div>
                     <div data-modal="modal1"
                         class="card cursor-pointer bg-lightgray hover:bg-gray duration-200 p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-2xl max-sm:text-[14px]/5 font-semibold max-sm:font-semibold text-center">
+                        <h3 class="text-[25px] max-2xl:text-[22px] max-sm:text-[14px]/5 font-semibold max-sm:font-semibold text-center">
                             Submitted Documents</h3>
                         <p class="mt-2 text-center max-sm:text-[13px]">Click here to view</p>
                     </div>
                     <div data-modal="modal2"
                         class="card cursor-pointer bg-lightgray hover:bg-gray duration-200 p-4 rounded-lg border border-gray shadow">
-                        <h2 class="text-2xl max-sm:text-[14px]/5 font-semibold max-sm:font-semibold text-center">Pending
+                        <h2 class="text-[25px] max-2xl:text-[22px] max-sm:text-[14px]/5 font-semibold max-sm:font-semibold text-center">Pending
                             Documents</h2>
                         <p class="mt-2 text-center max-sm:text-[13px]">Click here to view</p>
                     </div>
@@ -53,12 +53,12 @@
         <div class="p-6 max-md:px-0 space-y-10">
             <div class="flex max-md:block gap-10 w-full">
                 <!-- Notification Tab -->
-                <main class="flex-1 py-4 max-md:px-0">
+                <main class="flex-1 py-4 max-md:px-0 max-md:py-2">
                     <div class="w-full mx-auto px-4 max-md:px-1 py-4 flex items-center justify-between">
                         <h1 class="text-2xl max-md:text-[20px] font-semibold text-gray-800">Notifications</h1>
-                        <button class="ttext-sm max-md:text-xs text-blue hover:text-darkblue duration-200">Mark all as read</button>
+                        <button class="text-sm max-md:text-xs text-blue hover:text-darkblue duration-200">Mark all as read</button>
                     </div>
-                    <div class="w-full mx-auto px-4 max-md:px-0 py-2">
+                    <div class="w-full mx-auto px-4 max-md:px-0 py-2 max-md:py-0">
                         <div class="bg-white shadow-sm border-2 border-gray">
 
                             <!-- Scroll area -->
@@ -98,9 +98,9 @@
     <!-- Modal -->
     <!-- Submitted Documents -->
     <div id="modal1" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[9999]">
-        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
-            <h2 class="text-2xl font-bold mb-4">Submitted Documents</h2>
-            <div id="scrollbar" class="overflow-y-auto h-64 px-2 border-2 border-gray">
+        <div class="bg-white max-sm:mx-2 rounded-lg shadow-lg p-6 max-w-md w-full">
+            <h2 class="text-[23px] max-sm:text-[18px] font-bold mb-4">Submitted Documents</h2>
+            <div id="scrollbar" class="overflow-y-auto h-64 max-sm:h-60 px-2 border-2 border-gray">
                 <x-submitted-document label="Form 2(A) - STUDY PROTOCOL REVIEW CHECKLIST" />
                 <x-submitted-document label="Form 2(B) - APPLICATION FOR INITIAL REVIEW" />
                 <x-submitted-document label="Form 2(C) - INFORMED CONSENT FORM" />
@@ -119,7 +119,7 @@
                 <x-submitted-document label="Form 3(L) - FINAL REPORTS" />
             </div>
             <button type="button"
-                class="closeModal mt-6 px-4 py-2 rounded text-primary bg-secondary border border-primary text-primary hover:bg-primary hover:text-secondary hover:border-secondary duration-200">
+                class="closeModal text-[17px] max-sm:text-[15px] mt-6 px-4 py-2 rounded text-primary tracking-widest bg-secondary text-primary hover:bg-primary hover:text-secondary duration-200">
                 CLOSE
             </button>
         </div>

@@ -1,4 +1,4 @@
-@section('title','Dashboard')
+@section('title', 'Dashboard')
 <x-iacuc-layout>
     <!-- Main Content -->
     <main class="ml-[335px] max-2xl:ml-auto p-4">
@@ -23,22 +23,22 @@
             </div>
             <!-- User Account Cards -->
             <div>
-                <h2 class="text-xl font-semibold mb-4 text-gray-700">USERS ACCOUNT</h2>
+                <h2 class="text-[20px] max-sm:text-[17px] font-semibold mb-4">USERS ACCOUNT</h2>
                 <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
                         <p class="max-md:text-[12px]">TOTAL USERS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
                         <p class="max-md:text-[12px]">PENDING</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">7</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">7</h3>
                         <p class="max-md:text-[12px]">APPROVED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">3</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">3</h3>
                         <p class="max-md:text-[12px]">DISABLED</p>
                     </div>
                 </div>
@@ -46,26 +46,26 @@
 
             <!-- Research Protocol -->
             <div>
-                <h2 class="text-xl font-semibold mb-4 text-gray-700">RESEARCH PROTOCOL</h2>
+                <h2 class="text-[20px] text-[17px] font-semibold mb-4">RESEARCH PROTOCOL</h2>
                 <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">5</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">5</h3>
                         <p class="max-md:text-[12px]">EVALUATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">10</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">10</h3>
                         <p class="max-md:text-[12px]">PENDING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">12</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
                         <p class="max-md:text-[12px]">ONGOING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">5</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">5</h3>
                         <p class="max-md:text-[12px]">TERMINATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[20px] font-semibold">10</h3>
+                        <h3 class="text-[25px] max-md:text-[22px] max-sm:text-[20px] font-semibold">10</h3>
                         <p class="max-md:text-[12px]">APPROVED</p>
                     </div>
                 </div>
@@ -75,11 +75,11 @@
             <div class="flex max-md:block gap-10 w-full">
                 <!-- Main content -->
                 <main class="flex-1">
-                    <div class="max-w-5xl mx-auto px-4 max-md:px-1 py-4 flex items-center justify-between">
+                    <div class="max-w-5xl mx-auto max-md:px-1 px-4 py-4 flex items-center justify-between">
                         <h1 class="text-2xl max-md:text-[20px] font-semibold text-gray-800">Notifications</h1>
                         <button class="text-sm max-md:text-xs text-blue hover:text-darkblue duration-200">Mark all as read</button>
                     </div>
-                    <div class="max-w-5xl mx-auto px-4 max-md:px-0 py-6 max-md:py-2">
+                    <div class="max-w-5xl mx-auto max-md:px-0 px-4 py-6 max-md:py-2">
                         <div class="bg-white shadow-sm border-2 border-gray">
 
                             <!-- Scroll area -->

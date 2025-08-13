@@ -115,7 +115,7 @@
 <div id="sidebar"
     class="fixed top-0 left-0 h-full w-80 bg-primary 2xl:hidden shadow transform -translate-x-full transition-transform duration-300 z-50">
     <nav class="flex flex-col p-2">
-        <ul class="text-white mt-[55px]">
+        <ul class="text-white max-2xl:mt-[65px] max-sm:mt-[55px]">
             <!-- Dashboard -->
             <li>
                 <a href="{{ url('/erb/dashboard') }}"
@@ -209,7 +209,7 @@
                 </a>
             </li>
             <!-- Profile Information -->
-            <li class="fixed h-[60px] w-[300px] left-0 bottom-0 py-2.5 px-3.5 overflow-hidden ease-in-out duration-200">
+            <li class="fixed h-[60px] w-[300px] left-0 bottom-0 py-1.5 px-3.5 overflow-hidden ease-in-out duration-200">
                 <div class="flex items-center flex-nowrap">
                     <img src="" alt=""
                         class="h-[45px] w-[45px] object-cover rounded-[50%] mr-[10px] border-2 border-white">
@@ -237,6 +237,6 @@
         </svg>
     </button>
     <!-- Page Title (centered) -->
-    <h1 id="page-title" class="text-[15px] font-normal mx-auto">Loading...</h1>
+    <h1 id="page-title" class="max-2xl:text-[23px] max-sm:text-[15px] font-normal mx-auto">Loading...</h1>
     <img src="" alt="a">
 </header>

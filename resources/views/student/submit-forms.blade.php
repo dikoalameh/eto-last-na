@@ -9,21 +9,27 @@
         <div class="p-6 max-md:p-0 space-y-10">
             <div class="my-4">
                 <h2 class="mb-4 font-semibold text-[20px]">Deficiencies</h2>
-                <div class="hover:bg-gray my-3 bg-lightgray p-4 rounded-lg flex justify-between items-center duration-200">
-                    <div class="block items-center flex-wrap gap-[10px]">
-                        <h2 class="text-[19px] font-semibold">FORM 2(A)</h2>
-                        <p class="text-[12px]">Due at 08/10/2025</p>
-                        <label for="" class="mt-1 text-[14px]">STUDY PROTOCOL REVIEW CHECKLIST</label>
+                <!-- nilagyan ko lang ng href para madirect sa submit-form-layout page -->
+                <a href="{{ url('student/submit-form-layout') }}">
+                    <div
+                        class="hover:bg-gray my-3 bg-lightgray p-4 rounded-lg flex justify-between items-center duration-200">
+                        <div class="block items-center flex-wrap gap-[10px]">
+                            <h2 class="text-[19px] font-semibold">FORM 2(A)</h2>
+                            <p class="text-[12px]">Due at 08/10/2025</p>
+                            <label for="" class="mt-1 text-[14px]">STUDY PROTOCOL REVIEW CHECKLIST</label>
+                        </div>
                     </div>
-                </div>
-                <div class="hover:bg-gray my-3 bg-lightgray p-4 rounded-lg flex justify-between items-center duration-200">
+                </a>
+                <div
+                    class="hover:bg-gray my-3 bg-lightgray p-4 rounded-lg flex justify-between items-center duration-200">
                     <div class="block items-center flex-wrap gap-[10px]">
                         <h2 class="text-[19px] font-semibold">FORM 2(B)</h2>
                         <p class="text-[12px]">Due at 08/10/2025</p>
                         <label for="" class="mt-1 text-[14px]">APPLICATION FOR INITIAL REVIEW</label>
                     </div>
                 </div>
-                <div class="hover:bg-gray my-3 bg-lightgray p-4 rounded-lg flex justify-between items-center duration-200">
+                <div
+                    class="hover:bg-gray my-3 bg-lightgray p-4 rounded-lg flex justify-between items-center duration-200">
                     <div class="block items-center flex-wrap gap-[10px]">
                         <h2 class="text-[19px] font-semibold">FORM 2(C)</h2>
                         <p class="text-[12px]">Due at 08/10/2025</p>
@@ -39,7 +45,7 @@
     window.addEventListener("load", () => {
         const input = document.getElementById('upload');
         const filewrapper = document.getElementById('fileWrapper');
-        
+
         // uploading multiple files at the same time
         input.addEventListener("change", (e) => {
             const files = e.target.files;
