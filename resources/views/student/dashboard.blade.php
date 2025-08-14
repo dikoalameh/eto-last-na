@@ -126,13 +126,13 @@
     </div>
     <!-- Pending Documents -->
     <div id="modal2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[9999]">
-        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
-            <h2 class="text-2xl font-bold mb-4">Pending Requirements</h2>
-            <div id="scrollbar" class="overflow-y-auto h-64 px-2 border-2 border-gray">
-                <p>All requirements has been passed</p>
+        <div class="bg-white max-sm:mx-2 rounded-lg shadow-lg p-6 max-w-md w-full">
+            <h2 class="text-[23px] max-sm:text-[18px] font-bold mb-4">Pending Requirements</h2>
+            <div id="scrollbar" class="overflow-y-auto h-64 max-sm:h-60 px-2 border-2 border-gray">
+                <p class="max-sm:text-[14px]">All requirements has been passed</p>
             </div>
             <button type="button"
-                class="closeModal mt-6 px-4 py-2 rounded text-primary bg-secondary border border-primary text-primary hover:bg-primary hover:text-secondary hover:border-secondary duration-200">
+                class="closeModal mt-6 px-4 py-2 rounded text-primary bg-secondary tracking-widest text-primary hover:bg-primary hover:text-secondary duration-200">
                 CLOSE
             </button>
         </div>
