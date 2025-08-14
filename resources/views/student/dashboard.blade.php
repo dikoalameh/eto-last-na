@@ -132,7 +132,7 @@
                 <p class="max-sm:text-[14px]">All requirements has been passed</p>
             </div>
             <button type="button"
-                class="closeModal mt-6 px-4 py-2 rounded text-primary bg-secondary tracking-widest text-primary hover:bg-primary hover:text-secondary duration-200">
+                class="closeModal text-[17px] max-sm:text-[15px] mt-6 px-4 py-2 rounded text-primary bg-secondary tracking-widest text-primary hover:bg-primary hover:text-secondary duration-200">
                 CLOSE
             </button>
         </div>
